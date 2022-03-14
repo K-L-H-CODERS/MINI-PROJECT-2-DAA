@@ -9,3 +9,25 @@ There are n machines and m jobs. Each job contains exactly n operations. The i-t
 <li>Dynamic programming.</li>
 <li>Heuristic algorithm.</li>
 <li>Meta-heuristics.</li>
+
+
+
+# Our Algorithm  [Johnson's Algorithm]
+
+Algorithm JOHNSON_FLOWSHOP(T, Q)
+// T is array of time of jobs, each column indicating time on machine Mi
+// Q is queue of jobs
+Q = Φ
+for j = 1 to n do
+  t = minimum machine time scanning in booth columns
+  if t occurs in column 1 then
+    Add Jobj to the first empty slot of Q
+  else
+    Add Jobj to last empty slot of Q
+  end
+  Remove processed job from consideration
+end
+return Q
+![image](https://user-images.githubusercontent.com/87629978/158102552-57110bce-717a-4e9f-8ab9-688eb7e44b3b.png)
+
+
