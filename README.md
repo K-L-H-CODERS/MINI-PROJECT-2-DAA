@@ -13,6 +13,8 @@ There are n machines and m jobs. Each job contains exactly n operations. The i-t
 
 
 
+
+
 # Our Algorithm  [Johnson's Algorithm]
 
 
